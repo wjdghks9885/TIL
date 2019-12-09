@@ -85,7 +85,7 @@ $ git push origin master
 
 - 로컬에 이미 파일을 저장한 경우 절대 경로가 아닌 상대 경로를 사용하여 이미지를 저장합니다.
 
-  ​				<img src="https://git-scm.com/images/logo@2x.png" alt="git" style="zoom:125%;" /> <img src="http://img.tangunsoft.com/Upload/ProductFamily/20180514/20180514071520.png" alt="github" style="zoom:125%;" />
+  <img src="https://git-scm.com/images/logo@2x.png" alt="git" style="zoom:125%;" /> <img src="http://img.tangunsoft.com/Upload/ProductFamily/20180514/20180514071520.png" alt="github" style="zoom:125%;" />
 
 ### 1.5 Link
 
@@ -164,9 +164,3 @@ ___
 이것은 **보드체**입니다.
 
 이것은 ~~취소선~~입니다.
-
-
-
-## 2. 과제
-
-> 현재의 pdf 문서를 마크다운 문법을 활용하여 `00_markdown_basic.md` 로 만들어 보세요.
