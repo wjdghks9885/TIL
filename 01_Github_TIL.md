@@ -1,9 +1,13 @@
 # Github TIL
 
+
+
 ## 1. TIL?
 
 > - TIL은 **T**oday **I** **L**earned의 줄임말로 개발자 사이에서 매일 자신이 학습한 내용을 commit(기록)하는 것
 > - github, bitbucket, gitlab과 같은 원격 저장소에서 제공하는 1commit-1grass의 흥미 요소 제공
+
+
 
 
 
@@ -90,6 +94,8 @@
 
   
 
+
+
 ## 3. `README.md`
 
 > 원격(remote) 저장소(repository)에 대한 정보를 기록하는 마크다운 문서. 일반적으로 해당 프로젝트를 사용하기 위한 방법 등을 기재한다.
@@ -124,6 +130,8 @@
   ```
 
   
+
+
 
 ## 4. 추가 학습 내용 관리
 
