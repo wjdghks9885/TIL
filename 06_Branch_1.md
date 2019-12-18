@@ -91,19 +91,19 @@
 
 - 이해가 안 될 수도 있다. 그래서 그림을 첨부해본다.
 
-![branch1](D:\USER\Desktop\yangho\브렌치1.PNG)
+![branch1](https://user-images.githubusercontent.com/49020354/71080118-ddb82080-21cf-11ea-9f78-cc338e9b843d.PNG)
 
 - bugFix가 내 **Branch**라고 생각하고 봐라.
 - 그리고 *(별표)표시 있는 **Branch**가 현재 내가 있는 **Branch**이다.
 - 여기서 merge를 하면 이렇게 된다.
 
-![branch2](D:\USER\Desktop\yangho\브렌치2.PNG)
+![branch2](https://user-images.githubusercontent.com/49020354/71080150-f0caf080-21cf-11ea-9706-b34b178163fd.PNG)
 
 - 위에서 말한대로 합쳐진 커밋(신버전)을 master만 가리키고있다.
 - 수정되긴 했지만 구버전인 c2를 bugFix(내 **Branch**)가 가리키고 있다.
 - 여기서 위에 언급한대로 내 **Branch**로 이동하여 master에 merge하면 어떻게 되는지 보자.
 
-![branch3](D:\USER\Desktop\yangho\브렌치3.PNG)
+![branch3](https://user-images.githubusercontent.com/49020354/71080157-f45e7780-21cf-11ea-8824-3c79708bd317.PNG)
 
 - 이렇게 수정된 신버전 커밋을 내 **Branch**도 가리키게 된다!
 
