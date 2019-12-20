@@ -12,7 +12,6 @@
   $ git branch -d 브렌치
   ```
 
-
 ---
 
 #### 2. Branch rebase
@@ -56,6 +55,38 @@
 
 ---
 
-#### 3. Branch revert
+#### 3. Branch reset
 
-~~공부 후 추가 예정~~
+- commit한(변경한) 내용을 되돌리는 방법이다.
+
+- `git reset` 은 이전의 commit을 가리키게 한다.
+
+- 애초에 commit 하지 않은 것처럼 예전 commit으로 **Branch**를 옮긴다.
+
+- 그래서 협업할 때 맘대로 `reset` 했다가는 기록도 남지 않아서 망할 수가 있다.
+
+  ```bash
+  $ git reset HEAD
+  ```
+
+  - 이렇게 하면 `reset`된다!
+
+---
+
+#### 4. Branch revert
+
+- 위에서 언급한 *reset*과 비슷한 맥락이지만 다르다!
+
+- *reset*은 이전의 commit을 가리키지만 `revert`는 변경 전의 내용을 담은 새로운 커밋이 생긴다.
+
+- *reset*은 기록을 남기지 않지만 `revert`는 기록을 남긴다.
+
+- 남은 기록은 push하면 협업하는 다른 사람에게도 보인다.
+
+- 그래서 되돌린 내용을 공유하기 위해서는 `revert`를 써야한다!
+
+  ```bash
+  $ git revert HEAD
+  ```
+
+  - 이렇게 하면 `revert`된다!
