@@ -13,27 +13,46 @@
 ### 2. Tensorflow로 linear regression하기
 
 - 오차의 제곱을 cost function이라 한다. => (y*hat* - y)^2
-
 - 그리고 회귀식이 `H(x) = Wx + b` 라 했을 때
 
   - cost function은 *cost(W, b)*가 되고
-
-  - 모델 학습의 목표는 *cost(W, b)*를 최소로 하는 것이므로
-
+- 모델 학습의 목표는 *cost(W, b)*를 최소로 하는 것이므로
   - 이를 최소로 하는 W와 b를 찾는 것이 목표이다.
+- cost function의 식은 다음과 같다.
+
+$$
+cost(W) = \frac{1}{m}\sum_{i=1}^m(Wx^{(i)} - y^{(i)})^2
+$$
+
+- 이 식을 후에 미분할 때 편리 성을 위해 다음 식으로 바꿔준다.
+
+$$
+cost(W) = \frac{1}{2m}\sum_{i=1}^m(Wx^{(i)} - y^{(i)})^2
+$$
 
 - cost function이 최소가 되는 값을 찾을 때 Gradient desent algorithm을 이용한다.
 
   - b가 0이라 할 때, cost function은 *cost(W)*
-
-  - x축을 W로 놓고 y축을 cost function으로 놓고 그래프를 그린다.
-
+- x축을 W로 놓고 y축을 cost function으로 놓고 그래프를 그린다.
   - 그 후 경사도(기울기)가 가장 작은 지점을 찾는다.
+- *cost(W, b)*라면 3차원 그래프
 
-  - *cost(W, b)*라면 3차원 그래프
+- 그래서 위 식을 W의 변화에 대한 식으로 정리하면 이렇게 된다.
+  - 여기서 alpha는 학습률이다.
+
+$$
+W := W-\alpha\frac{\partial}{\partial W}cost(W)
+$$
+
+- 위 식을 미분하면 이렇게 된다.
+
+$$
+W := W - \alpha\frac{1}{m}\sum_{i=1}^m(Wx^{(i)} - y^{(i)})x^{(i)}
+$$
+
+- 이 식을 이용해 W가 가장 작은 지점을 찾아가는 것이다.
 
 - 그래프는 꼭 Convex function의 모양이 되는지 확인해야 한다.(볼록한(밥그릇) 모양)
-
 - x(변수)가 많아지면 수식도 길어지고 불편하기 때문에 matrix를 이용한다. (다항 회귀)
 
   - 식 표현이 간단해진다.
