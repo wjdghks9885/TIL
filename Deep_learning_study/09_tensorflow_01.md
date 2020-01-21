@@ -30,12 +30,12 @@ $$
 cost(W) = \frac{1}{2m}\sum_{i=1}^m(Wx^{(i)} - y^{(i)})^2
 $$
 
+- (회귀에서 W(베타, 회귀계수)를 찾는 방법에는 최소제곱법 같은 방법도 있지만, 이 강의에서는 경사하강법으로 설명했다.)
 - cost function이 최소가 되는 값을 찾을 때 Gradient desent algorithm을 이용한다.
-
-  - b가 0이라 할 때, cost function은 *cost(W)*
-- x축을 W로 놓고 y축을 cost function으로 놓고 그래프를 그린다.
-  - 그 후 경사도(기울기)가 가장 작은 지점을 찾는다.
-- *cost(W, b)*라면 3차원 그래프
+- b가 0이라 할 때, cost function은 *cost(W)*
+  - x축을 W로 놓고 y축을 cost function으로 놓고 그래프를 그린다.
+- 그 후 경사도(기울기)가 가장 작은 지점을 찾는다.
+  - *cost(W, b)*라면 3차원 그래프
 
 - 그래서 위 식을 W의 변화에 대한 식으로 정리하면 이렇게 된다.
   - 여기서 alpha는 학습률이다.
