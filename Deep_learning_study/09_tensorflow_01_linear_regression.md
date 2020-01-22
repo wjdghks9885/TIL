@@ -26,19 +26,13 @@
 
 - cost function의 식은 다음과 같다.
 
-
-$$
-cost(W) = \frac{1}{m}\sum_{i=1}^m(Wx^{(i)} - y^{(i)})^2
-$$
+![soosic1](https://user-images.githubusercontent.com/49020354/72874040-7f351380-3d34-11ea-9923-e7282c20bce5.PNG)
 
 
 
 - 이 식을 후에 미분할 때 편리 성을 위해 다음 식으로 바꿔준다.
 
-
-$$
-cost(W) = \frac{1}{2m}\sum_{i=1}^m(Wx^{(i)} - y^{(i)})^2
-$$
+![soosic2](https://user-images.githubusercontent.com/49020354/72874049-83f9c780-3d34-11ea-8854-bc6222dd6261.PNG)
 
 
 
@@ -63,19 +57,13 @@ $$
 - 그래서 위 식을 W의 변화에 대한 식으로 정리하면 이렇게 된다.
   - 여기서 alpha는 학습률이다.
 
-
-$$
-W := W-\alpha\frac{\partial}{\partial W}cost(W)
-$$
+![soosic3](https://user-images.githubusercontent.com/49020354/72874062-86f4b800-3d34-11ea-8561-b7c266d41390.PNG)
 
 
 
 - 위 식을 미분하면 이렇게 된다.
 
-
-$$
-W := W - \alpha\frac{1}{m}\sum_{i=1}^m(Wx^{(i)} - y^{(i)})x^{(i)}
-$$
+![soosic4](https://user-images.githubusercontent.com/49020354/72874069-8a883f00-3d34-11ea-924d-53b1bfb1101b.PNG)
 
 
 
