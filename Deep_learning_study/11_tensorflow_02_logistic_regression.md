@@ -5,10 +5,7 @@
 - **logistic regression**의 hypothesis는 다음과 같다.
   - 이 식은 항상 0 ~ 1 사이의 값을 갖는다.
 
-
-$$
-H(X) = \frac{1}{1 + e^{-W^{T}X}}
-$$
+![soosic5](https://user-images.githubusercontent.com/49020354/72875011-b6a4bf80-3d36-11ea-971e-2bcfafe1c246.PNG)
 
 
 
@@ -19,15 +16,7 @@ $$
 
 - 그래서 **logistic regression**에 어울리는 cost function 식이 있다.
 
-
-$$
-cost(W) = \frac{1}{m}\sum{c(H(x),y)} \\
-
-c(H(x),y) = \begin{cases}
--log(H(x)) & : y = 1 \\
--log(1 - H(x)) & : y = 0 \\
-\end{cases}
-$$
+![soosic6](https://user-images.githubusercontent.com/49020354/72875018-b99fb000-3d36-11ea-9ab6-3c782138149e.PNG)
 
 
 
@@ -41,10 +30,7 @@ $$
 
 - 위 식을 한 줄로 풀어 놓은 식이 있다.
 
-
-$$
-cost(W) = -\frac{1}{m}\sum{ylog{(H(x))}} + (1 - y)(log(1 - H(x)))
-$$
+![soosic7](https://user-images.githubusercontent.com/49020354/72875024-bc9aa080-3d36-11ea-8066-aed4a49be466.PNG)
 
 
 
@@ -53,15 +39,9 @@ $$
   - y가 0이면 + 앞의 식이 0이 되며 사라진다.
   - 그래서 위 식과 같아진다!
 
+- 위 식에 의하면 실제 y가 1일 때, 1에 가까운 확률 값으로 예측한다면 cost(W)는 0에 가까운 값이 되고, 0에 가까운 확률 값으로 예측한다면 cost(W)는 매우 큰 값으로 발산한다.
 
-
-- 위 식에 의하면 실제 y가 1일 때, 1에 가까운 확률 값으로 예측한다면 *cost(W)*는 0에 가까운 값이 되고, 0에 가까운 확률 값으로 예측한다면 *cost(W)*는 매우 큰 값으로 발산한다.
-
-
-
-- 반대로 실제 y가 0일 때, 0에 가까운 확율 값으로 예측한다면 *cost(W)*는 0에 가까운 값이 되고, 1에 가까운 확률 값으로 예측한다면 *cost(W)*는 매우 큰 값으로 발산한다.
-
-
+- 반대로 실제 y가 0일 때, 0에 가까운 확율 값으로 예측한다면 cost(W)는 0에 가까운 값이 되고, 1에 가까운 확률 값으로 예측한다면 cost(W)는 매우 큰 값으로 발산한다.
 
 - **정리하자면 정답과 같게 예측하면 cost는 작아지고, 다르게 예측하면 cost는 커진다는 것이다.** ~~너무 당연한가~~
 
@@ -69,10 +49,7 @@ $$
 
 - 그 후 W를 찾아갈 때는 linear regression과 동일하게 Gradient decent algorithm을 이용한다.
 
-
-$$
-W := W-\alpha\frac{\partial}{\partial W}cost(W)
-$$
+![soosic3](https://user-images.githubusercontent.com/49020354/72874062-86f4b800-3d34-11ea-8561-b7c266d41390.PNG)
 
 
 
