@@ -29,7 +29,8 @@
   - 일반화 시킨다
     - 일반화의 방법은
     - weight을 너무 크게 하지 않는다
-    - (global minimum cost를 찾아갈 때 Regularization strength를 곱해준다)
+    - (cost에 Regularization strength를 곱해준 서메이션w^2를 더해주어서 일반화를 시키는 방법)
+    - (일부러 학습 데이터의 cost를 높인다.)
 
 ---
 
